@@ -47,6 +47,7 @@ func handleEvent(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Saved event: %+v\n", event)
 	w.WriteHeader(http.StatusOK)
 }
+// コメント
 func main() {
 	db := InitDB()
 	repo = NewEventRepository(db)
